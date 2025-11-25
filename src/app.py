@@ -1,4 +1,7 @@
-# src/app.py
+"""
+App simulation for our CI/CD pipeline
+"""
+
 
 def calculate_average_price(prices):
     """
@@ -16,4 +19,5 @@ def calculate_average_price(prices):
 
 
 def greeting(name):
+    """Returns a greeting message with the given name."""
     return f"Hello, {name}!"
