@@ -34,5 +34,5 @@ jobs:
         run: flake8 src --exit-zero --count --max-complexity=10 --max-line-length=190 --statistics
       
       - name: Quality check
-        run: pylint src --fail_under 8.0
+        run: pylint src --fail-under 8.0
 
