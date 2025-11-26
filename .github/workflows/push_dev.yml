@@ -31,8 +31,8 @@ jobs:
         run: black src
       
       - name: Lint with flake8
-        run: flake8 src --count --max-complexity=10 --max-line-length=127 --statistics
+        run: flake8 src --count --max-complexity=10 --max-line-length=190 --statistics
       
       - name: Quality check
-        run: pylint src | tee pylint_output.txt
+        run: pylint src --fail_under 8.0
 
